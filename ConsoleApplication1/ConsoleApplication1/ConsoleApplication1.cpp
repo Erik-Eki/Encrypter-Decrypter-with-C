@@ -7,7 +7,7 @@ void main() {
 	CreateArray();
 }
 void CreateArray() {
-	int length = 23;
+	int length = 26;
 	string alphabet1[26] = { "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z" };
 	//string *Alphabet = new string[length]
 	string alphabet[2][26];
