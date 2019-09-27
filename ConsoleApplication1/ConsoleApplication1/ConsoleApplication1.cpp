@@ -13,7 +13,7 @@ void CreateArray() {
 	string alphabet[2][26];
 	for (int i = 0; i < 2; i++)
 	{
-		for (int j = 0; j < 23; j++)
+		for (int j = 0; j < 26; j++)
 		{
 			if (i == 0) {
 				alphabet[i][j] = alphabet1[j];
@@ -23,9 +23,14 @@ void CreateArray() {
 				int num1 = GetRandom();
 				int num2 = GetRandom();
 				int num3 = GetRandom();
+
 				alphabet[i][j] += alphabet1[num1];
 				alphabet[i][j] += alphabet1[num2];
 				alphabet[i][j] += alphabet1[num3];
+				for (int k = 0; k < 26; k++)
+				{
+
+				}
 				cout << alphabet[i][j] << endl;
 			}
 		}
