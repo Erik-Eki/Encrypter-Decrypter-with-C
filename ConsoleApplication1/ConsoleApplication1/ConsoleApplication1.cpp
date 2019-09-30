@@ -14,7 +14,6 @@ int GetRandom();
 void main()
 {
 	setlocale(LC_ALL, "Finnish");
-	//CreateArray();
 
 	string s;
 	int size = 0, op;
@@ -47,35 +46,4 @@ void main()
 
 	}*/
 	
-}
-void CreateArray() {
-
-	int num1copy = 0;
-	int num2copy = 0;
-	int num3copy = 0;
-	for (size_t i = 0; i < 26; i++)
-	{
-	createNewNumbers:
-		int num1 = GetRandom();
-		int num2 = GetRandom();
-		int num3 = GetRandom();
-
-		if (num1copy != num1 && num2copy != num2 && num3copy != num3) {
-			encryptedchars[i] += encryptedchars1[num1];
-			encryptedchars[i] += encryptedchars1[num2];
-			encryptedchars[i] += encryptedchars1[num3];
-		}
-		else {
-			goto createNewNumbers;
-		}
-		num1copy = num1;
-		num2copy = num2;
-		num3copy = num3;
-
-	}
-	}
-int GetRandom() {
-	int max = 26;
-	int min = 0;
-	return rand() % (max - min);
 }
