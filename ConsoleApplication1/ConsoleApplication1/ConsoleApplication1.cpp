@@ -17,7 +17,14 @@ void main()
 
 	string s;
 	int size = 0, op;
-	cout << "Syötä salainen viesti: ";
+
+
+	cout << "Paina 1 siirtyäksesi enkryptaukseen." << endl;
+	cout << "Valinta: ";
+	cin >> op;
+	switch (op) {
+	case 1:
+			cout << "Syötä salainen viesti: ";
 	cin >> s;
 	size = s.length();
 
@@ -32,18 +39,11 @@ void main()
 
 	cout << encryptedMessage << endl;
 	cout << "Viesti enkryptattu!" << endl;
-/*
-	cout << "Paina 1 siirtyäksesi enkryptaukseen." << endl;
-	cout << "Valinta: ";
-	cin >> op;
-	switch (op) {
-	case 1:
-		
 
 		break;
 	default:
 		cout << "Väärin kirjoitettu tymhä.";
 
-	}*/
+	}
 	
 }
